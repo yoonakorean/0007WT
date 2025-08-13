@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>0-4 單字聽打測驗</title>
+<title>0-7 單字聽打測驗</title>
 <style>
 body { font-family: sans-serif; max-width: 600px; margin: auto; text-align: center; padding: 30px 15px; }
 #logo, #logo-game { width: 150px; max-width: 80%; margin-bottom: 10px; display: block; margin-left: auto; margin-right: auto; }
@@ -33,7 +33,7 @@ if (password !== "1231") { alert("密碼錯誤，無法進入！"); window.locat
 
 <div id="game-area" class="hidden">
 <img id="logo-game" src="logo.png" alt="Logo"/>
-<div id="game-title">0-4 單字聽打測驗</div>
+<div id="game-title">0-7 單字聽打測驗</div>
 <div id="question-number"></div>
 <div id="timer" style="font-size:18px; color:red; margin-bottom:15px;"></div>
 <audio id="audio" controls></audio>
@@ -55,18 +55,26 @@ if (password !== "1231") { alert("密碼錯誤，無法進入！"); window.locat
 
 <script>
 const questions = [
-  { audio: "000401W.mp3", answer: "가루", chinese: "粉" },
-  { audio: "000402W.mp3", answer: "고모", chinese: "姑姑" },
-  { audio: "000403W.mp3", answer: "요가", chinese: "瑜珈" },
-  { audio: "000404W.mp3", answer: "고구마", chinese: "地瓜" },
-  { audio: "000405W.mp3", answer: "카드", chinese: "卡片" },
-  { audio: "000406W.mp3", answer: "마이크", chinese: "麥克風" },
-  { audio: "000407W.mp3", answer: "쿠키", chinese: "餅乾" },
-  { audio: "000408W.mp3", answer: "코", chinese: "鼻子" },
-  { audio: "000409W.mp3", answer: "꼬리", chinese: "尾巴" },
-  { audio: "000410W.mp3", answer: "두꺼비", chinese: "癩蛤蟆" },
-  { audio: "000411W.mp3", answer: "코끼리", chinese: "大象" },
-  { audio: "000412W.mp3", answer: "꼬마", chinese: "小不點" }
+  { audio: "000701W.mp3", answer: "소포", chinese: "包裹" },
+  { audio: "000702W.mp3", answer: "시소", chinese: "蹺蹺板" },
+  { audio: "000703W.mp3", answer: "호수", chinese: "湖" },
+  { audio: "000704W.mp3", answer: "마스크", chinese: "口罩" },
+  { audio: "000705W.mp3", answer: "씨", chinese: "種子" },
+  { audio: "000706W.mp3", answer: "비싸요", chinese: "很貴" },
+  { audio: "000707W.mp3", answer: "쓰기", chinese: "寫作" },
+  { audio: "000708W.mp3", answer: "쏘가리", chinese: "鱖魚" },
+  { audio: "000709W.mp3", answer: "저기", chinese: "那裡" },
+  { audio: "000710W.mp3", answer: "사자", chinese: "獅子" },
+  { audio: "000711W.mp3", answer: "지도", chinese: "地圖" },
+  { audio: "000712W.mp3", answer: "바지", chinese: "褲子" },
+  { audio: "000713W.mp3", answer: "처리", chinese: "處理" },
+  { audio: "000714W.mp3", answer: "마차", chinese: "馬車" },
+  { audio: "000715W.mp3", answer: "치료", chinese: "治療" },
+  { audio: "000716W.mp3", answer: "후추", chinese: "胡椒" },
+  { audio: "000717W.mp3", answer: "짜요", chinese: "很鹹" },
+  { audio: "000718W.mp3", answer: "쭈꾸미", chinese: "小章魚" },
+  { audio: "000719W.mp3", answer: "찌다", chinese: "蒸" },
+  { audio: "000720W.mp3", answer: "짜리", chinese: "面額" }
 ];
 
 const modeSelectDiv = document.getElementById("mode-select");
